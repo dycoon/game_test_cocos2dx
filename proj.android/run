@@ -1,0 +1,8 @@
+env NDK_ROOT="/cygdrive/c/Dycoon/sof2/android-ndk-r8e" python build_native.py
+
+ant debug
+adb devices
+adb uninstall net.rmake.cocos2dx_my_proj_2
+adb install -r bin/my_proj_2-debug.apk
+adb logcat | grep '\(/Mruby_test\)\|\(/dalvikvm\)'
+
