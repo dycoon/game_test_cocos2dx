@@ -79,6 +79,8 @@ bool HelloWorld::init()
 
 	listener->onTouchesBegan = CC_CALLBACK_2(HelloWorld::onTouchesBegan, this);
 	dispatcher->addEventListenerWithSceneGraphPriority(listener, this);
+
+	this->testGame.Init(this);
     
     return true;
 }

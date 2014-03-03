@@ -2,11 +2,14 @@
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"
+#include "TestGame.h"
+
 
 class HelloWorld : public cocos2d::Layer
 {
 private:
 	cocos2d::LabelTTF* label;
+	TestGame testGame;
 
 public:
     // there's no 'id' in cpp, so we recommend returning the class instance pointer
